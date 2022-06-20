@@ -12,9 +12,6 @@ import java.util.List;
 
 @Component
 public class PathFinder {
-    public PathFinder() {
-    }
-
     public PathResponse findShortestPath(WeightedMultigraph<Station, DefaultWeightedEdge> map,
                                          Station source, Station target) {
         confirmSelectSameStation(source, target);
